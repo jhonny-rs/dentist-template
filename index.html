@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- CALENDLY BOOKING SYSTEM -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 </head>
 
 <body>
@@ -31,10 +35,10 @@
             <ul>
                 <li><a class="disabled" href="#"><img id="logo-img" src="/logo.png" alt="logo"></a></li>
                 <div class="header-content">
-                    <li><a href="#cards-page">serviços</a></li>
-                    <li><a href="#office-page">consultório</a></li>
-                    <li><a href="#professionals">Profissionais</a></li>
-                    <li><a href="#location-page">contato</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#clinic">clinic</a></li>
+                    <li><a href="#professionals">professionals</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -45,39 +49,43 @@
             <h1>Lorem Ipsum</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, a laborum. Ullam consectetur molestiae
                 animi reprehenderit unde! </p>
-            <button class="blue-btn">Marcar uma consulta</button>
+            <button class="blue-btn"><a href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jjhonnyj'});return false;">Book an
+                    appointment</a></button>
         </div>
     </section>
 
-    <section id="cards-page">
-        <h2>Nossos serviços</h2>
+    <section id="services">
+        <h2>Our services</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae corporis temporibus.</p>
         <div class="card-section">
             <div class="card">
-                <h3>preventivo</h3>
+                <h3>preventive</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non labore illum eaque ipsa incidunt
                     possimus commodi reprehenderit quas expedita, atque voluptate, suscipit quasi at? Ea eveniet
                     distinctio impedit recusandae temporibus.</p>
             </div>
             <div class="card">
-                <h3>restauração</h3>
+                <h3>restorative</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde, magni animi aspernatur corporis
                     minima culpa alias incidunt quidem explicabo fuga odit deleniti nesciunt hic, iusto quis deserunt
                     provident dolorem?</p>
             </div>
             <div class="card">
-                <h3>cosmético</h3>
+                <h3>cosmetic</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolore obcaecati! Neque, in sapiente
                     ut sed ratione cumque nobis commodi temporibus? Porro velit in nulla eum reiciendis omnis et!
                     Expedita?</p>
             </div>
         </div>
-        <button class="blue-btn">Marcar uma consulta</button>
+        <button class="blue-btn"><a href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jjhonnyj'});return false;">Book an
+                appointment</a></button>
     </section>
 
-    <section id="office-page">
+    <section id="clinic">
         <div class="blue-card">
-            <h3>Consultório</h3>
+            <h3>Our clinic</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos recusandae ipsum eum error dolorum nesciunt
                 enim odit, adipisci consequatur consectetur repellendus dolores ut, quia, corrupti a! Iusto aliquam ab
                 veritatis.
@@ -87,7 +95,7 @@
         </div>
         <div id="bg-image-office"></div>
         <div class="office-tech">
-            <h3>Nossas tecnologias</h3>
+            <h3>Our technology</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="tech-content">
                 <div id="border">
@@ -107,14 +115,16 @@
                         ut ad labore dolore!</p>
                 </div>
             </div>
-            <button class="blue-btn" style="margin-top: 15px;">Marcar uma consulta</button>
+            <button class="blue-btn" style="margin-top: 15px;"><a href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jjhonnyj'});return false;">Book an
+                    appointment</a></button>
         </div>
     </section>
 
     <section id="professionals">
         <div id="bg-img-professionals"></div>
         <div class="blue-card">
-            <h3>Profissionais</h3>
+            <h3>Professionals</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatibus ipsa aperiam quos nemo maxime
                 quasi dolor ea hic consequatur perspiciatis explicabo pariatur quas quisquam nulla inventore modi, atque
                 praesentium.</p>
@@ -123,15 +133,15 @@
         </div>
     </section>
 
-    <section id="location-page">
-        <div class="contact">
-            <h3>Contato</h3>
-            <p><span class="fa fa-envelope">:</span><a href="#"> contato@gmail.com</a></p>
-            <p><span class="fa fa-phone">:</span><a href="#"> +55 (00) 12345 6789</a></p>
-            <p><span class="fa fa-location-dot">:</span><a href="#"> "endereço por extenso"</a></p>
+    <section id="contact">
+        <div class="contact-section">
+            <h3>Contact</h3>
+            <p><span class="fa fa-envelope">:</span><a href="#"> contact@gmail.com</a></p>
+            <p><span class="fa fa-phone">:</span><a href="#">(123) 456-7890</a></p>
+            <p><span class="fa fa-location-dot">:</span><a href="#"> "<i>Our adress</i>"</a></p>
         </div>
         <div id="map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1839490173047!2d-73.98811752517939!3d40.75797873480151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1spt-BR!2sbr!4v1710465130792!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1839490173047!2d-73.98811752517939!3d40.75797873480151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sbr!4v1710693280110!5m2!1sen!2sbr"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </section>
